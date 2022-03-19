@@ -28,6 +28,7 @@ public class player : MonoBehaviour
             transform.position = new Vector3( 0f, 1.5f, 0f);
             transform.rotation = Quaternion.identity;
         }
+        
     }
 
     void FixedUpdate()
