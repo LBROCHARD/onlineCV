@@ -10,6 +10,7 @@ public class player : MonoBehaviour
     public Camera mainCam;
     public Camera cam2;
     private bool canMove = true;
+    public bool inCollider = false;
 
     void Start()
     {
@@ -21,7 +22,10 @@ public class player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            ChangeCamera();
+            if (inCollider == true) 
+            {
+                ChangeCamera();
+            }
         }
         if (Input.GetKeyDown(KeyCode.R))
         {
