@@ -5,7 +5,15 @@ using UnityEngine;
 public class computer : MonoBehaviour
 {
 
-    void Start(){}
+    public Transform screen;
+    public Transform screen2;
+
+    void Start()
+    {
+        screen.GetComponent<Renderer>().enabled = false;
+        screen2.GetComponent<Renderer>().enabled = false;
+    }
+
     void Update(){}
 
     void OnTriggerEnter(Collider other)
@@ -15,6 +23,7 @@ public class computer : MonoBehaviour
             player player = other.gameObject.GetComponent<player>();
             player.inCollider = true;
             this.gameObject.transform.GetChild(0).GetComponent<Renderer>().enabled = true;
+            this.gameObject.transform.GetChild(1).GetComponent<Renderer>().enabled = true;
         }
     }
 
@@ -25,6 +34,7 @@ public class computer : MonoBehaviour
             player player = other.gameObject.GetComponent<player>();
             player.inCollider = false;
             this.gameObject.transform.GetChild(0).GetComponent<Renderer>().enabled = false;
+            this.gameObject.transform.GetChild(1).GetComponent<Renderer>().enabled = false;
         }
     }
 
