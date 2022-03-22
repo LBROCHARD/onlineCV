@@ -29,7 +29,7 @@ public class player : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.R))
         {
-            transform.position = new Vector3( 0f, 1.5f, 0f);
+            transform.position = new Vector3( 0f, 1f, -3f);
             transform.rotation = Quaternion.identity;
         }
         
