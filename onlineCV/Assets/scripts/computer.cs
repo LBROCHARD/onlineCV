@@ -22,8 +22,8 @@ public class computer : MonoBehaviour
             // Debug.Log("collision with player");
             player player = other.gameObject.GetComponent<player>();
             player.inCollider = true;
-            this.gameObject.transform.GetChild(0).GetComponent<Renderer>().enabled = true;
-            this.gameObject.transform.GetChild(1).GetComponent<Renderer>().enabled = true;
+            screen.GetComponent<Renderer>().enabled = true;
+            screen.GetComponent<Renderer>().enabled = true;
         }
     }
 
@@ -33,8 +33,8 @@ public class computer : MonoBehaviour
             // Debug.Log("player is out");
             player player = other.gameObject.GetComponent<player>();
             player.inCollider = false;
-            this.gameObject.transform.GetChild(0).GetComponent<Renderer>().enabled = false;
-            this.gameObject.transform.GetChild(1).GetComponent<Renderer>().enabled = false;
+            screen.GetComponent<Renderer>().enabled = false;
+            screen.GetComponent<Renderer>().enabled = false;
         }
     }
 
