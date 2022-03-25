@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class computer : MonoBehaviour
+public class DisplayingObject : ZoomableObject
 {
 
     public Transform screen;
@@ -12,6 +12,7 @@ public class computer : MonoBehaviour
     {
         screen.GetComponent<Renderer>().enabled = false;
         screen2.GetComponent<Renderer>().enabled = false;
+        focusCamera.enabled = false;
     }
 
     void Update(){}
@@ -19,9 +20,9 @@ public class computer : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player"){
-            // Debug.Log("collision with player");
             player player = other.gameObject.GetComponent<player>();
             player.inCollider = true;
+            player.focusCamera = focusCamera;
             screen.GetComponent<Renderer>().enabled = true;
             screen.GetComponent<Renderer>().enabled = true;
         }
@@ -30,7 +31,6 @@ public class computer : MonoBehaviour
     void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "Player"){
-            // Debug.Log("player is out");
             player player = other.gameObject.GetComponent<player>();
             player.inCollider = false;
             screen.GetComponent<Renderer>().enabled = false;

@@ -9,6 +9,7 @@ public class player : MonoBehaviour
     public float speed = 6f;
     public Camera mainCam;
     public Camera cam2;
+    public Camera focusCamera;
     private bool canMove = true;
     public bool inCollider = false;
 
@@ -29,8 +30,7 @@ public class player : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.R))
         {
-            transform.position = new Vector3( 0f, 1f, -3f);
-            transform.rotation = Quaternion.identity;
+            TpBack();
         }
         
     }
@@ -61,8 +61,15 @@ public class player : MonoBehaviour
     void ChangeCamera()
     {
         mainCam.enabled = !mainCam.enabled;
-        cam2.enabled = !cam2.enabled;
+        // cam2.enabled = !cam2.enabled;
+        focusCamera.enabled = !focusCamera.enabled;
         canMove = !canMove;
+    }
+
+    public void TpBack()
+    {
+        transform.position = new Vector3( 0f, 1f, -3f);
+        transform.rotation = Quaternion.identity;
     }
 }
 

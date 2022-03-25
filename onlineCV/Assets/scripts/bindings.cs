@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class bindings : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    void Start(){}
+    void Update(){}
+
+    void OnTriggerEnter(Collider other)
     {
-        
+        if (other.gameObject.tag == "Player"){
+            this.gameObject.transform.GetChild(0).GetComponent<Renderer>().enabled = true;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerExit(Collider other)
     {
-        
+        if (other.gameObject.tag == "Player"){
+            this.gameObject.transform.GetChild(0).GetComponent<Renderer>().enabled = false;
+        }
     }
+
 }
