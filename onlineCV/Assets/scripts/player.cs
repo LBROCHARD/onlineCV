@@ -6,10 +6,15 @@ public class player : MonoBehaviour
 {
     public Rigidbody body;
     public Animator animator;
+
     public float speed = 6f;
+    public float turnSmoothTime = 0.1f;
+    float turnSmoothVelocity;
+
     public Camera mainCam;
     public Camera cam2;
     public Camera focusCamera;
+
     private bool canMove = true;
     public bool inCollider = false;
 
@@ -46,7 +51,8 @@ public class player : MonoBehaviour
             if (canMove == true) 
             {
                 float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
-                transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
+                float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
+                transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
                 body.MovePosition( body.position + direction * speed * Time.fixedDeltaTime);
                 animator.SetBool("isMoving", true);
