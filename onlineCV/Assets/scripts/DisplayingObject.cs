@@ -13,6 +13,7 @@ public class DisplayingObject : ZoomableObject
         screen.GetComponent<Renderer>().enabled = false;
         screen2.GetComponent<Renderer>().enabled = false;
         focusCamera.enabled = false;
+        zoomObject.GetComponent<Renderer>().enabled = false;
     }
 
     void Update(){}
@@ -25,6 +26,7 @@ public class DisplayingObject : ZoomableObject
             player.focusCamera = focusCamera;
             screen.GetComponent<Renderer>().enabled = true;
             screen.GetComponent<Renderer>().enabled = true;
+            zoomObject.GetComponent<Renderer>().enabled = true;
         }
     }
 
@@ -35,6 +37,7 @@ public class DisplayingObject : ZoomableObject
             player.inCollider = false;
             screen.GetComponent<Renderer>().enabled = false;
             screen.GetComponent<Renderer>().enabled = false;
+            zoomObject.GetComponent<Renderer>().enabled = false;
         }
     }
 

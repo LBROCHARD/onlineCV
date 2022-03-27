@@ -5,10 +5,13 @@ using UnityEngine;
 public class ZoomableObject : MonoBehaviour
 {
     public Camera focusCamera;
+    public Transform zoomObject;
+
 
     void Start()
     {
         focusCamera.enabled = false;
+        zoomObject.GetComponent<Renderer>().enabled = false;
     }
 
     void OnTriggerEnter(Collider other)
@@ -17,6 +20,7 @@ public class ZoomableObject : MonoBehaviour
             player player = other.gameObject.GetComponent<player>();
             player.inCollider = true;
             player.focusCamera = focusCamera;
+            zoomObject.GetComponent<Renderer>().enabled = true;
         }
     }
 
@@ -25,6 +29,7 @@ public class ZoomableObject : MonoBehaviour
         if (other.gameObject.tag == "Player"){
             player player = other.gameObject.GetComponent<player>();
             player.inCollider = false;
+            zoomObject.GetComponent<Renderer>().enabled = false;
         }
     }
 }
