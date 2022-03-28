@@ -25,7 +25,7 @@ public class DisplayingObject : ZoomableObject
             player.inCollider = true;
             player.focusCamera = focusCamera;
             screen.GetComponent<Renderer>().enabled = true;
-            screen.GetComponent<Renderer>().enabled = true;
+            screen2.GetComponent<Renderer>().enabled = true;
             zoomObject.GetComponent<Renderer>().enabled = true;
         }
     }
@@ -36,7 +36,7 @@ public class DisplayingObject : ZoomableObject
             player player = other.gameObject.GetComponent<player>();
             player.inCollider = false;
             screen.GetComponent<Renderer>().enabled = false;
-            screen.GetComponent<Renderer>().enabled = false;
+            screen2.GetComponent<Renderer>().enabled = false;
             zoomObject.GetComponent<Renderer>().enabled = false;
         }
     }
