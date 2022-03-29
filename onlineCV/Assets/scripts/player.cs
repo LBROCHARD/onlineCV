@@ -64,7 +64,7 @@ public class player : MonoBehaviour
         }
     }
     
-    void ChangeCamera()
+    public void ChangeCamera()
     {
         mainCam.enabled = !mainCam.enabled;
         // cam2.enabled = !cam2.enabled;
