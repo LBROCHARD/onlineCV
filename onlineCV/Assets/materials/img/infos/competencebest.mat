@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ststan
+  m_Name: competencebest
   m_Shader: {fileID: -6465566751694194690, guid: ecab81ea928f51946bea2c0b009544af, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -24,7 +24,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_87d91db868c6440893250f30616be091:
-        m_Texture: {fileID: 2800000, guid: cbc81dbcfa05f1f47a3d06047e8a7516, type: 3}
+        m_Texture: {fileID: 2800000, guid: 69917f1c6e12e7c40a02ecc2383589ec, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -112,7 +112,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_0c8c032d5a80445bbbc4705b040b219b: {r: 0.03301889, g: 0.4083869, b: 1, a: 1}
+    - Color_0c8c032d5a80445bbbc4705b040b219b: {r: 1, g: 1, b: 1, a: 1}
     - Color_ba008012db174ed2962dbc00cf6912dd: {r: 0.1882353, g: 11.41961, b: 11.98431, a: 0}
     - Vector2_ffb8437581a540f080fbcbf031b4515b: {r: 1, g: 5, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
