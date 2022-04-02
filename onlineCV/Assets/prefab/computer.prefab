@@ -132,8 +132,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   focusCamera: {fileID: 755340645982223749}
   zoomObject: {fileID: 2059529308989097017}
-  screen: {fileID: 9044612955783073326}
-  screen2: {fileID: 2365855647584568631}
+  screens:
+  - {fileID: 9044612955783073326}
+  - {fileID: 2365855647584568631}
 --- !u!65 &577172103532142362
 BoxCollider:
   m_ObjectHideFlags: 0
