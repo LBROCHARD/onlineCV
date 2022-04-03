@@ -15,18 +15,23 @@ public class player : MonoBehaviour
     public Camera cam2;
     public Camera focusCamera;
 
-    private bool canMove = true;
+    public bool canMove = true;
     public bool inCollider = false;
+
+    public GameObject canvas;
+    private CanvasScript canvasScript;
 
     void Start()
     {
+        canMove = false;
         mainCam.enabled = true;
         cam2.enabled = false;
+        canvasScript = canvas.GetComponent<CanvasScript>();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Escape))
         {
             if (inCollider == true) 
             {
@@ -70,6 +75,7 @@ public class player : MonoBehaviour
         // cam2.enabled = !cam2.enabled;
         focusCamera.enabled = !focusCamera.enabled;
         canMove = !canMove;
+        canvasScript.ShowingEscape();
     }
 
     public void TpBack()
