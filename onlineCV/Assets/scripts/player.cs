@@ -17,6 +17,7 @@ public class player : MonoBehaviour
 
     public bool canMove = true;
     public bool inCollider = false;
+    public bool inCvBox = false;
 
     public GameObject canvas;
     private CanvasScript canvasScript;

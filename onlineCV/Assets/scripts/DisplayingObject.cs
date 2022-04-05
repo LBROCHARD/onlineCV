@@ -5,6 +5,7 @@ using UnityEngine;
 public class DisplayingObject : ZoomableObject
 {
     public Transform[] screens;
+    public bool isCvBox = false;
 
     void Start()
     {
@@ -23,6 +24,10 @@ public class DisplayingObject : ZoomableObject
             player.inCollider = true;
             player.focusCamera = focusCamera;
 
+            if (isCvBox == true) {
+                player.inCvBox = true;
+            }
+
             foreach(Transform transf in screens)
             {
                 transf.GetComponent<Renderer>().enabled = true;
@@ -37,6 +42,10 @@ public class DisplayingObject : ZoomableObject
         if (other.gameObject.tag == "Player"){
             player player = other.gameObject.GetComponent<player>();
             player.inCollider = false;
+
+            if (isCvBox == true) {
+                player.inCvBox = false;
+            }
 
             foreach(Transform transf in screens)
             {
