@@ -16,8 +16,6 @@ public class DisplayingObject : ZoomableObject
         zoomObject.GetComponent<Renderer>().enabled = false;
     }
 
-    void Update(){}
-
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player"){

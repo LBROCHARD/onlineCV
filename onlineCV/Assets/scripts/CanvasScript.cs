@@ -10,6 +10,7 @@ public class CanvasScript : MonoBehaviour
     public Image image2;
     public Image escape;
     private bool secondImage = false;
+    private bool canvasIsOn = true;
     public Transform player;
     private player playerScript;
     
@@ -30,9 +31,10 @@ public class CanvasScript : MonoBehaviour
                 image1.GetComponent<Image>().enabled = false;
                 image2.GetComponent<Image>().enabled = true;
                 secondImage = true;
-            } else {
+            } else if (canvasIsOn == true) {
                 image2.GetComponent<Image>().enabled = false;
                 playerScript.canMove = true;
+                canvasIsOn = false;
             }
         }
     }
