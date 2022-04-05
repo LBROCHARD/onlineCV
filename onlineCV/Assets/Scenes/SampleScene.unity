@@ -553,6 +553,44 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 615bc4a662cd6c442b1441cf5df6523c, type: 3}
+--- !u!1 &67414279 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5076577952511413315, guid: ee469f1c223d10f409f915bbb9ec1ed7, type: 3}
+  m_PrefabInstance: {fileID: 262961846}
+  m_PrefabAsset: {fileID: 0}
+--- !u!328 &67414283
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67414279}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: 042dc0a9ee308a74482f32908deacc32, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _BaseMap
+  m_RenderMode: 3
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
+  m_Url: 
+  m_EnabledAudioTracks: 
+  m_DirectAudioMutes: 
+  m_ControlledAudioTrackCount: 0
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 1
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
 --- !u!4 &68073866 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6313045272864599227, guid: 31b5f82363e19f14aa8dbbe8f2a859c4, type: 3}
@@ -1098,6 +1136,44 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1819104406309192431, guid: 9cb59ac482aff194585128d252906f9b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9cb59ac482aff194585128d252906f9b, type: 3}
+--- !u!1 &160420577 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5076577952511413315, guid: ee469f1c223d10f409f915bbb9ec1ed7, type: 3}
+  m_PrefabInstance: {fileID: 1170673774}
+  m_PrefabAsset: {fileID: 0}
+--- !u!328 &160420579
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160420577}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: f3ac93bab38d8ef4cacf5df4c01b25a8, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _BaseMap
+  m_RenderMode: 3
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
+  m_Url: 
+  m_EnabledAudioTracks: 
+  m_DirectAudioMutes: 
+  m_ControlledAudioTrackCount: 0
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 1
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
 --- !u!1 &171211581 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3416200077470837942, guid: 9cb59ac482aff194585128d252906f9b, type: 3}
@@ -2100,6 +2176,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2092384674}
     m_Modifications:
+    - target: {fileID: 647765806433946944, guid: ee469f1c223d10f409f915bbb9ec1ed7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 92ab67653a1bd9d4dbe65d653969c2ec, type: 2}
     - target: {fileID: 3043297477880093972, guid: ee469f1c223d10f409f915bbb9ec1ed7, type: 3}
       propertyPath: mainCamera
       value: 
@@ -4422,6 +4502,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2092384674}
     m_Modifications:
+    - target: {fileID: 647765806433946944, guid: ee469f1c223d10f409f915bbb9ec1ed7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 92ab67653a1bd9d4dbe65d653969c2ec, type: 2}
     - target: {fileID: 3043297477880093972, guid: ee469f1c223d10f409f915bbb9ec1ed7, type: 3}
       propertyPath: mainCamera
       value: 
@@ -5251,7 +5335,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 667986070}
-  m_LocalRotation: {x: 0.3842858, y: -0.23745453, z: 0.10296906, w: 0.8861925}
+  m_LocalRotation: {x: 0.3842858, y: -0.23745455, z: 0.10296905, w: 0.8861925}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -8009,7 +8093,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.3810075, y: -0.23832084, z: 0.102299616, w: 0.8874521}
+  m_LocalRotation: {x: 0.38101152, y: -0.23828207, z: 0.10228432, w: 0.8874626}
   m_LocalPosition: {x: 4.219943, y: 10.014856, z: -10.759156}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -9342,6 +9426,44 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31b5f82363e19f14aa8dbbe8f2a859c4, type: 3}
+--- !u!1 &1090976053 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5076577952511413315, guid: ee469f1c223d10f409f915bbb9ec1ed7, type: 3}
+  m_PrefabInstance: {fileID: 550420661}
+  m_PrefabAsset: {fileID: 0}
+--- !u!328 &1090976057
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090976053}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: 2bafd4d71ea7a1d45aec02c2c20e7874, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _BaseMap
+  m_RenderMode: 3
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
+  m_Url: 
+  m_EnabledAudioTracks: 
+  m_DirectAudioMutes: 
+  m_ControlledAudioTrackCount: 0
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 1
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
 --- !u!20 &1099226674 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 8783806671957165538, guid: ee469f1c223d10f409f915bbb9ec1ed7, type: 3}
@@ -10020,6 +10142,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2092384674}
     m_Modifications:
+    - target: {fileID: 647765806433946944, guid: ee469f1c223d10f409f915bbb9ec1ed7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 92ab67653a1bd9d4dbe65d653969c2ec, type: 2}
     - target: {fileID: 3043297477880093972, guid: ee469f1c223d10f409f915bbb9ec1ed7, type: 3}
       propertyPath: mainCamera
       value: 
@@ -13751,7 +13877,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1728160628}
-  m_LocalRotation: {x: 0.36783072, y: -0.24173868, z: 0.09964292, w: 0.89237565}
+  m_LocalRotation: {x: 0.36785224, y: -0.24154578, z: 0.09956341, w: 0.89242786}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
