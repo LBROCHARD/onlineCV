@@ -317,6 +317,7 @@ Transform:
   - {fileID: 141861185}
   - {fileID: 365560497}
   - {fileID: 1135144373}
+  - {fileID: 1608716554}
   m_Father: {fileID: 1562956942}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3851,10 +3852,10 @@ RectTransform:
   m_Father: {fileID: 871603552}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.00000047684}
-  m_SizeDelta: {x: 4050, y: 2481.8115}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 67, y: -27}
+  m_SizeDelta: {x: 6386.327, y: 4741.223}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &487351088 stripped
 Transform:
@@ -4226,7 +4227,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 514724168}
-  m_LocalRotation: {x: 0.36624923, y: -0.23949237, z: 0.098136194, w: 0.89379764}
+  m_LocalRotation: {x: 0.36624923, y: -0.23949234, z: 0.09813618, w: 0.89379764}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6312,7 +6313,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.8
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -11379,10 +11380,10 @@ RectTransform:
   m_Father: {fileID: 871603552}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.00000047684}
-  m_SizeDelta: {x: 4050, y: 2481.8115}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 67, y: -27}
+  m_SizeDelta: {x: 6717.576, y: 4674.0254}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1224433165
 MonoBehaviour:
@@ -13780,11 +13781,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1608716550}
   m_LocalRotation: {x: -0.152491, y: -0, z: -0, w: 0.98830485}
-  m_LocalPosition: {x: 0.25, y: 0.794, z: 15.788}
-  m_LocalScale: {x: 0.4, y: 0.2, z: 0.1}
+  m_LocalPosition: {x: -0.1138345, y: 0.04400003, z: 1.9879999}
+  m_LocalScale: {x: 0.4, y: 0.20000002, z: 0.10000001}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 18464919}
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: -17.543, y: 0, z: 0}
 --- !u!1001 &1613224588
 PrefabInstance:
