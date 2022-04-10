@@ -135,6 +135,7 @@ MonoBehaviour:
   screens:
   - {fileID: 9044612955783073326}
   - {fileID: 2365855647584568631}
+  isCvBox: 0
 --- !u!65 &577172103532142362
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -211,7 +212,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 183
+    m_Bits: 1207
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0

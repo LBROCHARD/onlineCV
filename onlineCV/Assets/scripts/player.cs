@@ -32,9 +32,16 @@ public class player : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             if (inCollider == true) 
+            {
+                ChangeCamera();
+            }
+        } 
+        else if ( Input.GetMouseButtonDown(0) )
+        {
+            if (inCollider == true && canMove == false)
             {
                 ChangeCamera();
             }
@@ -83,6 +90,9 @@ public class player : MonoBehaviour
     {
         transform.position = new Vector3( 0f, 1f, -3f);
         transform.rotation = Quaternion.identity;
+        if ( canMove == false){
+            ChangeCamera();
+        }
     }
 }
 

@@ -159,10 +159,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   focusCamera: {fileID: 8783806671957165538}
   zoomObject: {fileID: 3043297477880093971}
-  screen: {fileID: 842519834058946481}
-  screen2: {fileID: 0}
   screens:
   - {fileID: 842519834058946481}
+  isCvBox: 0
 --- !u!1 &5513134273232473690
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,7 +354,7 @@ MonoBehaviour:
   m_RendererIndex: -1
   m_VolumeLayerMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 1025
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 0
